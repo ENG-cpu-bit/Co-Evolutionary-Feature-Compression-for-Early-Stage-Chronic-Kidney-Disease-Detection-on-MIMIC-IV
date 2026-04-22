@@ -178,8 +178,8 @@ If you use this work, please cite:
 
 ```bibtex
 @article{sgpo_v2_ckd_2025,
-  title   = {Co-Evolutionary Feature Selection and Hyperparameter Optimization
-             for Early-Stage Chronic Kidney Disease Detection Using MIMIC-IV},
+  title   = {Co-Evolutionary Feature Selection and Hyperparameter Optimization for Early-Stage CKD Detection
+},
   author  = {Mustafa, Muhammed Abdel-Hamid Shawki and Al-Bili, Abdul Rahman Ismat},
   year    = {2025},
   institution = {New Mansoura University, Computer Science \& Engineering, CSE015},
