@@ -1,0 +1,53 @@
+{
+  "optimizer": "SGPO_v2",
+  "components": [
+    "SFOA",
+    "DOA",
+    "FungalGrowth"
+  ],
+  "config": {
+    "sfoa_pop_size": 10,
+    "doa_pop_size": 10,
+    "n_generations": 30,
+    "inner_cv_folds": 3,
+    "outer_cv_folds": 10,
+    "strategy": "diagonal",
+    "smote": true,
+    "dataset_rows": 57875,
+    "dataset_features": 42
+  },
+  "optimization_results": {
+    "best_fitness": 0.7056468836482813,
+    "best_auc": 0.9535534310035203,
+    "best_sensitivity": 0.8898846874725308,
+    "best_n_features": 8,
+    "selected_features": [
+      "age",
+      "n_admissions",
+      "avg_los_days",
+      "ins_UNKNOWN",
+      "marital_SINGLE",
+      "marital_UNKNOWN",
+      "marital_WIDOWED",
+      "creatinine"
+    ],
+    "best_hyperparameters": {
+      "n_estimators": 278,
+      "max_depth": 15,
+      "min_samples_split": 3,
+      "min_samples_leaf": 8
+    },
+    "total_time_seconds": 4311.3
+  },
+  "final_evaluation": {
+    "accuracy_mean": 0.8867,
+    "accuracy_std": 0.0036,
+    "auc_mean": 0.9537,
+    "auc_std": 0.002,
+    "sensitivity_mean": 0.8902,
+    "sensitivity_std": 0.0063,
+    "specificity_mean": 0.8832,
+    "specificity_std": 0.0053
+  },
+  "timestamp": "2026-04-16T07:19:08.169349"
+}

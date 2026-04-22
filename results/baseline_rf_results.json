@@ -1,0 +1,31 @@
+{
+  "model": "RandomForest (baseline)",
+  "n_estimators": 100,
+  "cv_folds": 5,
+  "cv_accuracy_mean": 0.8897,
+  "cv_accuracy_std": 0.0022,
+  "cv_auc_mean": 0.9561,
+  "cv_auc_std": 0.0011,
+  "cv_sensitivity_mean": 0.8904,
+  "cv_sensitivity_std": 0.0034,
+  "dataset_rows": 57875,
+  "dataset_features": 42,
+  "top_features": {
+    "creatinine": 0.2852,
+    "urea_nitrogen": 0.1559,
+    "age": 0.055,
+    "hemoglobin": 0.0376,
+    "max_los_days": 0.0357,
+    "n_admissions": 0.0334,
+    "rbc": 0.031,
+    "ins_Medicare": 0.03,
+    "hematocrit": 0.0277,
+    "avg_los_days": 0.025,
+    "mchc": 0.0217,
+    "glucose": 0.019,
+    "potassium": 0.0183,
+    "alkaline_phosphatase": 0.0167,
+    "albumin": 0.0164
+  },
+  "timestamp": "2026-04-16T05:17:38.087350"
+}

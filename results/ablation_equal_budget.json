@@ -1,0 +1,131 @@
+{
+  "experiment": "ablation_equal_budget",
+  "config": {
+    "generations": 30,
+    "pop_size": 10,
+    "inner_folds": 3,
+    "outer_folds": 10,
+    "seed": 42
+  },
+  "full_sgpo_v2_reference": {
+    "variant": "full-sgpo-v2",
+    "generations": 30,
+    "pop_size": 10,
+    "n_features": 8,
+    "auc_mean": 0.9537,
+    "auc_std": 0.002,
+    "sensitivity_mean": 0.8902,
+    "sensitivity_std": 0.0063
+  },
+  "variants": [
+    {
+      "variant": "no-fgo",
+      "generations": 30,
+      "pop_size": 10,
+      "use_sfoa": true,
+      "use_doa": true,
+      "use_fgo": false,
+      "best_fitness": 0.7035,
+      "n_features": 7,
+      "selected_features": [
+        "max_los_days",
+        "ins_Medicare",
+        "marital_UNKNOWN",
+        "alkaline_phosphatase",
+        "chloride",
+        "creatinine",
+        "sodium"
+      ],
+      "best_hp": {
+        "n_estimators": 155,
+        "max_depth": 27,
+        "min_samples_split": 15,
+        "min_samples_leaf": 6
+      },
+      "runtime_seconds": 2947.7,
+      "accuracy_mean": 0.8786,
+      "accuracy_std": 0.0042,
+      "auc_mean": 0.9452,
+      "auc_std": 0.0017,
+      "sensitivity_mean": 0.8805,
+      "sensitivity_std": 0.0049,
+      "specificity_mean": 0.8767,
+      "specificity_std": 0.0075,
+      "display_name": "SFOA+DOA (no FGO)"
+    },
+    {
+      "variant": "no-doa",
+      "generations": 30,
+      "pop_size": 10,
+      "use_sfoa": true,
+      "use_doa": false,
+      "use_fgo": true,
+      "best_fitness": 0.69187,
+      "n_features": 10,
+      "selected_features": [
+        "age",
+        "n_admissions",
+        "n_urgent",
+        "n_elective",
+        "ins_Private",
+        "marital_MARRIED",
+        "chloride",
+        "creatinine",
+        "glucose",
+        "mch"
+      ],
+      "best_hp": {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      },
+      "runtime_seconds": 1779.0,
+      "accuracy_mean": 0.8805,
+      "accuracy_std": 0.0038,
+      "auc_mean": 0.9486,
+      "auc_std": 0.0018,
+      "sensitivity_mean": 0.8828,
+      "sensitivity_std": 0.0072,
+      "specificity_mean": 0.8781,
+      "specificity_std": 0.0043,
+      "display_name": "SFOA+FGO (no DOA)"
+    },
+    {
+      "variant": "sfoa-only",
+      "generations": 30,
+      "pop_size": 10,
+      "use_sfoa": true,
+      "use_doa": false,
+      "use_fgo": false,
+      "best_fitness": 0.70022,
+      "n_features": 7,
+      "selected_features": [
+        "max_los_days",
+        "marital_UNKNOWN",
+        "alkaline_phosphatase",
+        "chloride",
+        "creatinine",
+        "mchc",
+        "rbc"
+      ],
+      "best_hp": {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      },
+      "runtime_seconds": 1523.6,
+      "accuracy_mean": 0.8774,
+      "accuracy_std": 0.0039,
+      "auc_mean": 0.9418,
+      "auc_std": 0.0024,
+      "sensitivity_mean": 0.8767,
+      "sensitivity_std": 0.0058,
+      "specificity_mean": 0.878,
+      "specificity_std": 0.0058,
+      "display_name": "SFOA only (no DOA/FGO)"
+    }
+  ],
+  "timestamp": "2026-04-17T16:44:04.166053"
+}

@@ -1,0 +1,5 @@
+model,accuracy_mean,accuracy_std,auc_mean,auc_std,sensitivity_mean,sensitivity_std,specificity_mean,specificity_std,f1_mean,f1_std,n_features
+Logistic Regression,0.8811,0.0035,0.9487,0.0027,0.8742,0.0058,0.8881,0.0044,0.8813,0.0036,42
+Random Forest (baseline),0.8894,0.0026,0.9563,0.0018,0.891,0.0037,0.8876,0.0043,0.8905,0.0025,42
+XGBoost,0.8922,0.0032,0.9595,0.0016,0.8971,0.0043,0.8871,0.0053,0.8937,0.0031,42
+SGPO v2 (optimized RF),0.8867,0.0036,0.9537,0.002,0.8902,0.0063,0.8832,0.0053,0.8881,0.0037,8

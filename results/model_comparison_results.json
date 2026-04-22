@@ -1,0 +1,64 @@
+{
+  "experiment": "model_comparison",
+  "cv_folds": 10,
+  "dataset_rows": 57875,
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "accuracy_mean": 0.8811,
+      "accuracy_std": 0.0035,
+      "auc_mean": 0.9487,
+      "auc_std": 0.0027,
+      "sensitivity_mean": 0.8742,
+      "sensitivity_std": 0.0058,
+      "specificity_mean": 0.8881,
+      "specificity_std": 0.0044,
+      "f1_mean": 0.8813,
+      "f1_std": 0.0036,
+      "n_features": 42
+    },
+    {
+      "model": "Random Forest (baseline)",
+      "accuracy_mean": 0.8894,
+      "accuracy_std": 0.0026,
+      "auc_mean": 0.9563,
+      "auc_std": 0.0018,
+      "sensitivity_mean": 0.891,
+      "sensitivity_std": 0.0037,
+      "specificity_mean": 0.8876,
+      "specificity_std": 0.0043,
+      "f1_mean": 0.8905,
+      "f1_std": 0.0025,
+      "n_features": 42
+    },
+    {
+      "model": "XGBoost",
+      "accuracy_mean": 0.8922,
+      "accuracy_std": 0.0032,
+      "auc_mean": 0.9595,
+      "auc_std": 0.0016,
+      "sensitivity_mean": 0.8971,
+      "sensitivity_std": 0.0043,
+      "specificity_mean": 0.8871,
+      "specificity_std": 0.0053,
+      "f1_mean": 0.8937,
+      "f1_std": 0.0031,
+      "n_features": 42
+    },
+    {
+      "model": "SGPO v2 (optimized RF)",
+      "accuracy_mean": 0.8867,
+      "accuracy_std": 0.0036,
+      "auc_mean": 0.9537,
+      "auc_std": 0.002,
+      "sensitivity_mean": 0.8902,
+      "sensitivity_std": 0.0063,
+      "specificity_mean": 0.8832,
+      "specificity_std": 0.0053,
+      "f1_mean": 0.8881,
+      "f1_std": 0.0037,
+      "n_features": 8
+    }
+  ],
+  "timestamp": "2026-04-16T08:30:34.839418"
+}

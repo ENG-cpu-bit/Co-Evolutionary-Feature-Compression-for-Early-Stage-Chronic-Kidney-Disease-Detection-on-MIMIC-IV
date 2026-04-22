@@ -1,0 +1,70 @@
+{
+  "RFE-RF": {
+    "selected_features": [
+      "age",
+      "avg_los_days",
+      "max_los_days",
+      "creatinine",
+      "hematocrit",
+      "hemoglobin",
+      "rbc",
+      "urea_nitrogen"
+    ],
+    "n_features": 8,
+    "auc": 0.9489097266648026,
+    "auc_std": 0.0022725294986676954,
+    "sensitivity": 0.8861905061653109,
+    "sensitivity_std": 0.005599775587665817
+  },
+  "L1-LR": {
+    "selected_features": [
+      "n_admissions",
+      "hospital_expire_flag",
+      "ins_Medicare",
+      "marital_UNKNOWN",
+      "calcium_total",
+      "creatinine",
+      "magnesium",
+      "mchc"
+    ],
+    "n_features": 8,
+    "auc": 0.9440908224111464,
+    "auc_std": 0.0018810818753411162,
+    "sensitivity": 0.876954204893217,
+    "sensitivity_std": 0.004567026147503392
+  },
+  "RF-Importance": {
+    "selected_features": [
+      "age",
+      "n_admissions",
+      "max_los_days",
+      "ins_Medicare",
+      "creatinine",
+      "hemoglobin",
+      "rbc",
+      "urea_nitrogen"
+    ],
+    "n_features": 8,
+    "auc": 0.95290719581968,
+    "auc_std": 0.001750018583014921,
+    "sensitivity": 0.8898848254304627,
+    "sensitivity_std": 0.00514600214333764
+  },
+  "Mutual-Info": {
+    "selected_features": [
+      "age",
+      "max_los_days",
+      "ins_Medicare",
+      "creatinine",
+      "hematocrit",
+      "hemoglobin",
+      "rbc",
+      "urea_nitrogen"
+    ],
+    "n_features": 8,
+    "auc": 0.9456926150021936,
+    "auc_std": 0.0022848481500348963,
+    "sensitivity": 0.8847884109845356,
+    "sensitivity_std": 0.00620456839519786
+  }
+}

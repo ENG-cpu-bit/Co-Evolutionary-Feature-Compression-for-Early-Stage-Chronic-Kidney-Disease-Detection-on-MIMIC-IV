@@ -1,0 +1,7 @@
+variant,sfoa,doa,fgo,n_features,accuracy_mean,accuracy_std,auc_mean,auc_std,sensitivity_mean,sensitivity_std,specificity_mean,specificity_std,runtime_seconds
+Full SGPO v2 (SFOA+DOA+FGO),TRUE,TRUE,TRUE,8,0.8867,0.0036,0.9537,0.002,0.8902,0.0063,0.8832,0.0053,4311.3
+No FGO (SFOA+DOA only),TRUE,TRUE,FALSE,9,0.8885,0.0032,0.9541,0.0018,0.8949,0.0061,0.882,0.0046,1439.6
+"No DOA (SFOA+FGO, default HP)",TRUE,FALSE,TRUE,12,0.885,0.003,0.9502,0.0019,0.8841,0.005,0.8859,0.0043,829.1
+"No SFOA (all features, DOA+FGO)",FALSE,TRUE,TRUE,42,0.8917,0.0031,0.9573,0.0015,0.8946,0.0041,0.8888,0.0053,82.1
+Feature selection only (SFOA),TRUE,FALSE,FALSE,7,0.8808,0.0039,0.948,0.0023,0.8848,0.0067,0.8768,0.0042,725.7
+HP tuning only (DOA),FALSE,TRUE,FALSE,42,0.8917,0.0031,0.9573,0.0015,0.8946,0.0041,0.8888,0.0053,86.8
